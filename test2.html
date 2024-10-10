@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Final</title>
+    <style>
+      .payment-qr-container {
+          font-weight: 1000;
+          background-color: #fff;
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          overflow: hidden;
+          margin: 0 auto;
+          font-family: 'Noto Sans KR', sans-serif;
+          text-align: center;
+      }
+        
+      .header-image {
+        aspect-ratio: 8.7;
+        object-fit: contain;
+        width: 100%;
+        object-position: center;
+      }
+      
+      .content-wrapper {
+        display: flex;
+        margin-top: 7px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+      
+      .payment-header {
+        display: flex;
+        max-width: 100%;
+        font-size: 20px;
+        color: #000;
+        object-position: center;
+      }
+      
+      .payment-icon {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 24px;
+        margin: auto 0;
+      }
+      
+      .qr-instruction {
+        color: #949494;
+        font-size: 16px;
+        align-self: center;
+        margin-top: 20px;
+      }
+      
+      .qr-code {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        align-self: center;
+        margin-top: px;
+        max-width: 296px;
+      }
+      
+      .footer-content {
+        align-self: center;
+        display: flex;
+        width: 300px;
+        max-width: 100%;
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .timer {
+        color: #000;
+        text-align: center;
+        font-size: 28px;
+      }
+      
+      .refresh-icon {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 24px;
+        align-self: center;
+      }
+      
+      .refresh-instruction {
+        color: #949494;
+        font-size: 16px;
+        margin-top: 30px;
+      }
+      </style>
+</head>
+<body>
+      
+  <section class="payment-qr-container">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/21e056ad392b0737ce36f1ec8054ac74abe253b7cbd073cbe28d9ba38a69852c?placeholderIfAbsent=true&apiKey=c291ae11d51a4a019c7f3fcf813b7cbc" alt="" class="header-image" />
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ee350537f1b0e83c1a20064fdcafefaea625f0a659c24b317284a8e7137e8f21?placeholderIfAbsent=true&apiKey=c291ae11d51a4a019c7f3fcf813b7cbc" alt="Payment icon" class="payment-icon" />
+        <div class="content-wrapper">
+      <header class="payment-header">
+        <h1>결제</h1>
+      </header>
+      <p class="qr-instruction">아래 QR 코드를 제시해 주세요</p>
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6f1651b93b60d9c9c7d80160498a51bbf7356d706ccd4ccedabf723531d55728?placeholderIfAbsent=true&apiKey=c291ae11d51a4a019c7f3fcf813b7cbc" alt="QR Code for payment" class="qr-code" />
+      <footer class="footer-content">
+        <p class="timer">2:58</p>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3092e97a3a33e604dd68d14a3f3813c64e976ee98c97a0baf648e159dea54ef?placeholderIfAbsent=true&apiKey=c291ae11d51a4a019c7f3fcf813b7cbc" alt="Refresh icon" class="refresh-icon" />
+        <p class="refresh-instruction">QR이 만료되면 재생성 해주세요</p>
+      </footer>
+    </div>
+  </section>
+</body>
+</html>
